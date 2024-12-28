@@ -1,0 +1,238 @@
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git remote -v
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git remote add origin https://github.com/Ruturajkamble23/DevOps.git
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git remote -v
+origin  https://github.com/Ruturajkamble23/DevOps.git (fetch)
+origin  https://github.com/Ruturajkamble23/DevOps.git (push)
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git push -u origin master
+
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git push -u origin master -f
+info: please complete authentication in your browser...
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 686 bytes | 114.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Ruturajkamble23/DevOps.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git list.files
+git: 'list.files' is not a git command. See 'git --help'.
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git ls.files
+git: 'ls.files' is not a git command. See 'git --help'.
+
+The most similar command is
+        ls-files
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git ls-files
+Demo.html
+GitDemo.html
+Kogin.html
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git add Demo.html
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git push
+Everything up-to-date
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git remote -v
+origin  https://github.com/Ruturajkamble23/DevOps.git (fetch)
+origin  https://github.com/Ruturajkamble23/DevOps.git (push)
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git push -u origin master -f
+branch 'master' set up to track 'origin/master'.
+Everything up-to-date
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Demo.html
+        new file:   Kogin.html
+
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git restore --staged Demo.html
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Kogin.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Demo.html
+
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git push -u origin master -f
+branch 'master' set up to track 'origin/master'.
+Everything up-to-date
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Kogin.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Demo.html
+
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git add demo.html
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Kogin.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Demo.html
+
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git add Demo.html
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Demo.html
+        new file:   Kogin.html
+
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git ls.files
+git: 'ls.files' is not a git command. See 'git --help'.
+
+The most similar command is
+        ls-files
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git ls-file
+git: 'ls-file' is not a git command. See 'git --help'.
+
+The most similar command is
+        ls-files
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git log
+commit 5134521bd68f5c5ce1fe6a4545058818825c25cc (HEAD -> master, origin/master)
+Author: Ruturajkamble23 <rutucr07@gmail.com>
+Date:   Sat Dec 28 15:11:16 2024 +0530
+
+    Initial version
+
+commit 0621480d62111a2d7c906511cb2e9634aab0621c
+Author: Ruturajkamble23 <rutucr07@gmail.com>
+Date:   Sat Dec 28 14:40:21 2024 +0530
+
+    Read Me
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git add Demo.html
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Demo.html
+        new file:   Kogin.html
+
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git commit -m "Demo"
+[master babda94] Demo
+ 2 files changed, 37 insertions(+)
+ create mode 100644 Demo.html
+ create mode 100644 Kogin.html
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git push -u origin master -f
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 852 bytes | 284.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Ruturajkamble23/DevOps.git
+   5134521..babda94  master -> master
+branch 'master' set up to track 'origin/master'.
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git pull https://github.com/Ruturajkamble23/DevOps
+From https://github.com/Ruturajkamble23/DevOps
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git pull https://github.com/Ruturajkamble23/DevOps
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 10.39 KiB | 1.04 MiB/s, done.
+From https://github.com/Ruturajkamble23/DevOps
+ * branch            HEAD       -> FETCH_HEAD
+Updating babda94..7a3ee0f
+Fast-forward
+ Demo.png | Bin 0 -> 9649 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Demo.png
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git branch
+* master
+
+RUTURAJ@LAPTOP-13NVK0QI MINGW64 /d/study/DevOps (master)
+$ git push -u origin master -f
